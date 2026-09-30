@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Claire Nizard, créatrice UGC spécialisée en beauté, mode et lifestyle." />
+    <meta name="theme-color" content="#f2eee4" />
+    <title>Claire Nizard — Créatrice UGC</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23445d3b'/%3E%3Cpath d='M17 35c0-12 7-19 17-19 5 0 9 2 12 5l-5 7c-2-2-4-3-7-3-5 0-8 4-8 10s3 10 8 10c3 0 6-1 8-4l5 7c-4 4-8 6-14 6-10 0-16-7-16-19Z' fill='%23f2eee4'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand-mark">CN</span>
+        <span class="brand-role">Créatrice UGC</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span>Menu</span>
+        <i></i>
+      </button>
+      <nav id="main-nav" aria-label="Navigation principale">
+        <a href="#apropos">À propos</a>
+        <a href="#videos">Vidéos</a>
+        <a href="#photos">Photos</a>
+        <a class="nav-cta" href="#contact">Collaborons</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Beauty · Mode · Lifestyle</p>
+          <h1 id="hero-title"><span>Claire</span><span>Nizard</span></h1>
+          <div class="hero-bottom">
+            <p>Des contenus spontanés, esthétiques et pensés pour créer de la proximité.</p>
+            <a class="round-link" href="#videos" aria-label="Découvrir les créations">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v29M13 27l11 11 11-11" /></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="hero-frame">
+            <img src="./assets/img/326852af-7aeb-4c2d-914c-4199e0b32f50.jpg" alt="Portrait de Claire portant des bijoux turquoise" />
+          </div>
+          <div class="hero-sticker" aria-hidden="true">
+            <span>Authentique</span><b>✦</b><span>Créative</span>
+          </div>
+          <p class="side-note">Du scroll au coup de cœur.</p>
+        </div>
+      </section>
+
+      <section class="intro" id="apropos">
+        <p class="section-index">01 — À propos</p>
+        <div class="intro-grid">
+          <h2 class="reveal">Créer du contenu qui ressemble à la vraie vie, avec ce petit truc en plus qui arrête le scroll.</h2>
+          <div class="intro-copy reveal" data-delay="100">
+            <p>Je suis Claire, créatrice UGC. J’imagine des vidéos et des images naturelles qui mettent les produits en situation, racontent une histoire et donnent envie de passer à l’action.</p>
+            <p>Face caméra, démonstration produit ou ambiance lifestyle : chaque contenu est pensé pour parler à votre audience avec justesse.</p>
+            <div class="tag-list" aria-label="Spécialités">
+              <span>Face caméra</span><span>Storytelling</span><span>Produit</span><span>Social-first</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showreel" id="videos" aria-labelledby="video-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">02 — Vidéos</p>
+            <h2 id="video-title">Des contenus qui se regardent vraiment.</h2>
+          </div>
+          <p>Activez le son et entrez dans l’univers.</p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card tall reveal">
+            <video controls playsinline preload="metadata" poster="./assets/posters/2653e025-d2e0-4a5f-908f-1ced2e2c76a1.png">
+              <source src="./assets/videos/2653e025-d2e0-4a5f-908f-1ced2e2c76a1.mp4" type="video/mp4" />
+            </video>
+            <div class="video-meta"><span>01</span><h3>Lifestyle</h3><p>Storytelling</p></div>
+          </article>
+          <article class="video-card tall reveal" data-delay="80">
+            <video controls playsinline preload="metadata" poster="./assets/posters/5f1d6ecb-5e9e-499e-a14d-f07a0a1ec165.png">
+              <source src="./assets/videos/5f1d6ecb-5e9e-499e-a14d-f07a0a1ec165.mp4" type="video/mp4" />
+            </video>
+            <div class="video-meta"><span>02</span><h3>Bijoux</h3><p>Mise en situation</p></div>
+          </article>
+          <article class="video-card square reveal" data-delay="160">
+            <video controls playsinline preload="metadata" poster="./assets/posters/9ab02b75-4962-43f5-af57-a4770cda114d.png">
+              <source src="./assets/videos/9ab02b75-4962-43f5-af57-a4770cda114d.mp4" type="video/mp4" />
+            </video>
+            <div class="video-meta"><span>03</span><h3>Transition</h3><p>Format social</p></div>
+          </article>
+          <article class="video-card tall reveal">
+            <video controls playsinline preload="metadata" poster="./assets/posters/9d28dde7-77ba-45fe-9700-7c465b8a101f.png">
+              <source src="./assets/videos/9d28dde7-77ba-45fe-9700-7c465b8a101f.mp4" type="video/mp4" />
+            </video>
+            <div class="video-meta"><span>04</span><h3>Beauté</h3><p>Face caméra</p></div>
+          </article>
+          <article class="video-card tall reveal" data-delay="80">
+            <video controls playsinline preload="metadata" poster="./assets/posters/ac8380a8-16bc-4920-8f24-989988103726.png">
+              <source src="./assets/videos/ac8380a8-16bc-4920-8f24-989988103726.mp4" type="video/mp4" />
+            </video>
+            <div class="video-meta"><span>05</span><h3>Skincare</h3><p>Démonstration</p></div>
+          </article>
+          <article class="video-card tall reveal" data-delay="160">
+            <video controls playsinline preload="metadata" poster="./assets/posters/f491c125-8707-4c3c-afbe-d586447eeed2.png">
+              <source src="./assets/videos/f491c125-8707-4c3c-afbe-d586447eeed2.mp4" type="video/mp4" />
+            </video>
+            <div class="video-meta"><span>06</span><h3>Routine</h3><p>Contenu organique</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="services" aria-labelledby="services-title">
+        <div class="services-intro reveal">
+          <p class="section-index light">03 — Formats</p>
+          <h2 id="services-title">Une idée,<br />plusieurs façons<br />de la raconter.</h2>
+        </div>
+        <div class="service-list">
+          <article class="service reveal">
+            <span>01</span><h3>UGC organique</h3><p>Des contenus naturels pour nourrir vos réseaux et créer de la proximité.</p>
+          </article>
+          <article class="service reveal">
+            <span>02</span><h3>Visuels produits</h3><p>Des photos soignées qui donnent à voir les matières, les détails et l’usage.</p>
+          </article>
+          <article class="service reveal">
+            <span>03</span><h3>Contenus social-first</h3><p>Des formats pensés pour le mobile, rythmés et immédiatement lisibles.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="photo-work" id="photos" aria-labelledby="photo-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">04 — Photos</p>
+            <h2 id="photo-title">Détails, textures<br />et instants choisis.</h2>
+          </div>
+          <p>Une sélection de créations produit, beauté et lifestyle.</p>
+        </div>
+        <div class="masonry" aria-label="Galerie photo">
+          <figure class="wide reveal"><img loading="lazy" src="./assets/img/15dc2b0d-e57d-45a9-8ef4-fe361e9cac20.jpg" alt="Sandale kaki photographiée en studio" /></figure>
+          <figure class="square reveal"><img loading="lazy" src="./assets/img/2024e614-3c54-4a0d-a8ed-84726fa9258d.jpg" alt="Paire de sandales kaki en studio" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/2d4c4f71-e179-4599-826c-c64caf766fb3.jpg" alt="Boucles d’oreilles turquoise sur tissu rose" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/5d495a6f-71df-4e8b-9e93-27259a56363f.jpg" alt="Gourde turquoise tenue à la main" /></figure>
+          <figure class="square reveal"><img loading="lazy" src="./assets/img/35bec42d-00f2-40ff-afcb-c5454282fbcb.jpg" alt="Sandales kaki vues de face" /></figure>
+          <figure class="wide reveal"><img loading="lazy" src="./assets/img/63a25919-34ce-401e-b365-ce1561f43e10.jpg" alt="Paire de sandales kaki vue de face" /></figure>
+          <figure class="square reveal"><img loading="lazy" src="./assets/img/7d503876-ee5d-4570-a5ee-08a18f49169c.jpg" alt="Sandales kaki suspendues en studio" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/9db5c8d6-e694-4522-b0e4-f609aac32186.jpg" alt="Bijoux turquoise et pendentif étoile de mer" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/a6d4a1b4-7c94-42af-b885-fec2f1dcc324.jpg" alt="Boule à neige décorative en magasin" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/b5b5689c-8789-4242-b3d1-a83a2017b9c0.jpg" alt="Coussins léopard empilés" /></figure>
+          <figure class="square reveal"><img loading="lazy" src="./assets/img/bfeca403-0090-42fc-85d7-4293f10ed105.jpg" alt="Paire de sandales kaki suspendue" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/c849a999-1e54-45bb-9976-e36adc64f7f5.jpg" alt="Tenue de mode présentée sur mannequin" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/c9f3b901-73b2-4fa8-aea5-06ca99453b31.jpg" alt="Parfums ambrés dans une pochette turquoise" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/e36a7f19-6ef6-43e3-8fa3-012a6ed0df64.jpg" alt="Flacons ambrés devant une fenêtre" /></figure>
+          <figure class="wide reveal"><img loading="lazy" src="./assets/img/f9764ca2-2a31-4c65-8d7d-58656aca21db.jpg" alt="Sandale kaki photographiée de profil" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/fb36008e-15b5-4382-a762-70ea279f97a0.jpg" alt="Bracelet étoile de mer porté au poignet" /></figure>
+          <figure class="square reveal"><img loading="lazy" src="./assets/img/ffb49c98-9bd3-4ce5-9da0-d54e07363000.jpg" alt="Paire de sandales kaki en studio" /></figure>
+          <figure class="portrait reveal"><img loading="lazy" src="./assets/img/326852af-7aeb-4c2d-914c-4199e0b32f50.jpg" alt="Portrait beauté avec bijoux turquoise" /></figure>
+        </div>
+      </section>
+
+      <section class="process" aria-labelledby="process-title">
+        <div class="process-title reveal">
+          <p class="section-index">05 — Process</p>
+          <h2 id="process-title">Simple, fluide,<br />sur mesure.</h2>
+        </div>
+        <ol class="process-steps">
+          <li class="reveal"><span>01</span><div><h3>Le brief</h3><p>On pose l’objectif, le message et l’univers de votre marque.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>La création</h3><p>J’imagine l’angle, le rythme et la mise en scène qui vous ressemblent.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>La livraison</h3><p>Vous recevez des contenus prêts à vivre sur vos réseaux.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-orbit" aria-hidden="true"><span>UGC · PHOTO · VIDÉO · </span></div>
+        <p class="eyebrow reveal">Un projet en tête ?</p>
+        <h2 class="reveal">Votre produit mérite d’être <em>raconté</em>,<br />pas seulement montré.</h2>
+        <a class="contact-link reveal" href="https://www.instagram.com/contentbyclaire/" target="_blank" rel="noreferrer">
+          <span>Parlons-en sur Instagram</span>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38 38 10M16 10h22v22" /></svg>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#top">Claire Nizard</a>
+      <p>Créatrice UGC · France</p>
+      <p>© <span id="year"></span></p>
+    </footer>
+  </body>
+</html>
