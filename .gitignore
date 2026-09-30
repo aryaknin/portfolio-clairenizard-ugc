@@ -1,5 +1,5 @@
 .sites-checkout/
-assets/
+/assets/
 *.tar.gz
 *-qa.png
 desktop.png
