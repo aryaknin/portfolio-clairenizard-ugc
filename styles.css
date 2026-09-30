@@ -165,12 +165,17 @@ nav a:hover::after { transform: scaleX(1); transform-origin: left; }
 .pricing { background: var(--paper); }
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .main-prices { margin: 55px 0 30px; }
-.price-card { position: relative; min-height: 270px; display: grid; place-items: center; padding: 34px 20px; isolation: isolate; overflow: hidden; background: rgba(251,251,250,.72); border: 1px solid var(--soft-line); text-align: center; transition: transform .3s ease; }
-.price-card:hover { transform: translateY(-5px); }
-.price-card > img { position: absolute; inset: 50% auto auto 50%; z-index: -1; width: 120%; max-width: 440px; transform: translate(-50%, -50%); opacity: .82; }
-.price-card p { margin: 4px 0 14px; }
+.price-card { position: relative; min-height: 0; aspect-ratio: 1; display: grid; place-items: center; padding: clamp(24px, 3vw, 44px); isolation: isolate; background: var(--white); border: 1px solid rgba(60,60,59,.18); box-shadow: 0 14px 36px rgba(60,60,59,.06); text-align: center; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease; }
+.price-card::before { content: ''; position: absolute; inset: 0 0 auto; height: 6px; background: var(--peach); transform: scaleX(.22); transform-origin: center; transition: transform .35s ease; }
+.secondary-prices .price-card::before { background: var(--sage); }
+.price-card:hover { z-index: 2; transform: translateY(-8px) scale(1.025); border-color: rgba(60,60,59,.32); box-shadow: 0 28px 65px rgba(60,60,59,.14); }
+.price-card:hover::before { transform: scaleX(1); }
+.price-card > div { width: 100%; }
+.price-card h3 { margin-bottom: 20px; letter-spacing: .08em; }
+.price-card h3::after { content: ''; display: block; width: 34px; height: 1px; margin: 15px auto 0; background: currentColor; opacity: .5; }
+.price-card p { margin: 4px 0 14px; line-height: 1.75; }
+.price-card strong { font-weight: 600; }
 .secondary-prices { margin-top: 35px; }
-.secondary-prices .price-card { min-height: 390px; }
 
 .together { min-height: 690px; display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(55px, 9vw, 140px); padding: clamp(95px, 12vw, 170px) max(24px, calc((100vw - 1120px) / 2)); background: var(--white); }
 .together h2 { margin: 0; font-size: clamp(3.8rem, 7vw, 7rem); font-weight: 300; line-height: .77; letter-spacing: -.06em; text-align: center; }
@@ -192,6 +197,7 @@ footer p { margin: 0; }
 
 html.has-js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s ease, transform .75s cubic-bezier(.2,.8,.2,1); }
 html.has-js .reveal.is-visible { opacity: 1; transform: none; }
+html.has-js .price-card.reveal.is-visible:hover { transform: translateY(-8px) scale(1.025); }
 
 @media (max-width: 980px) {
   .site-header { backdrop-filter: none; }
@@ -246,6 +252,9 @@ html.has-js .reveal.is-visible { opacity: 1; transform: none; }
   .create-list { grid-template-columns: 1fr; padding-inline: 0; }
   .portfolio-intro { min-height: 0; padding: 70px 0; }
   .portfolio-collage { min-height: 480px; padding: 22px; }
+  .portfolio-collage .section-title-row { padding-right: 24px; }
+  .portfolio-collage .section-title-row h2 { font-size: clamp(1.7rem, 9.5vw, 2.7rem); letter-spacing: -.065em; white-space: nowrap; }
+  .portfolio-collage .section-title-row > span { font-size: 1.15rem; }
   .cutout-one { left: 0; top: 28%; height: 52%; }
   .cutout-two { right: -8%; top: 30%; height: 35%; }
   .cutout-three { left: 30%; height: 40%; }
