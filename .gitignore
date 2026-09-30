@@ -1,0 +1,8 @@
+.sites-checkout/
+assets/
+*.tar.gz
+*-qa.png
+desktop.png
+mobile.png
+videos.png
+photos.png
