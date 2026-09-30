@@ -80,9 +80,10 @@ nav a:hover::after { transform: scaleX(1); transform-origin: left; }
 
 .portfolio { background: var(--white); }
 .portfolio-intro { min-height: 780px; display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: clamp(40px, 8vw, 130px); width: var(--page); margin: auto; padding: 100px 0; }
-.portfolio-collage { position: relative; min-height: 610px; padding: 36px; overflow: hidden; background: var(--sage); }
-.portfolio-collage .section-title-row { position: relative; z-index: 5; }
-.portfolio-collage .section-title-row h2 { font-size: clamp(3rem, 5vw, 5.4rem); }
+.portfolio-collage { position: relative; min-height: 610px; padding: 36px; overflow: hidden; container-type: inline-size; background: var(--sage); }
+.portfolio-collage .section-title-row { position: relative; z-index: 5; padding-right: 42px; }
+.portfolio-collage .section-title-row h2 { font-size: clamp(2.5rem, 3.4vw, 4.25rem); font-size: clamp(2.5rem, 15cqw, 4.25rem); white-space: nowrap; }
+.portfolio-collage .section-title-row > span { position: absolute; top: 2px; right: 0; }
 .cutout { position: absolute; width: auto; object-fit: contain; }
 .cutout-one { left: 8%; top: 26%; height: 56%; z-index: 3; }
 .cutout-two { right: 2%; top: 28%; height: 40%; z-index: 2; }
